@@ -29,11 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/healthcare": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/healthcare.js"
-    ],
     "/screener": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
