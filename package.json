@@ -13,5 +13,18 @@
     "react": "16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "16.13.1"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbarovsky/middleground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbarovsky/middleground/issues"
+  },
+  "homepage": "https://github.com/zbarovsky/middleground#readme"
 }
