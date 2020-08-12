@@ -6,8 +6,8 @@ function FirstTopic() {
   return (
     <div>
       <h2>
-        <Link href="/climate-science">
-          Climate science
+        <Link href="/reopening-schools">
+          Reopening schools
         </Link>
       </h2>
     </div>
