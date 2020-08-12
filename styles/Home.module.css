@@ -83,16 +83,136 @@
   margin-top: 3rem;
 }
 
-.card {
+.card1 {
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+  text-align: center;
+  color: white;
   text-decoration: none;
   border: 1px solid #eaeaea;
-  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/reopening-schools.jpg');
+}
+
+.card2 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/masks.jpg');
+}
+
+.card3 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/blm.jpg');
+}
+
+.card4 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/vaccine.jpg');
+}
+
+.card5 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/voting.jpg');
+}
+
+.card6 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/reproductive-rights.jpg');
+}
+
+.card7 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/healthcare.jpg');
+}
+
+.card8 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/social-disparity.jpg');
+}
+
+.card9 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/climate-science.jpg');
+}
+
+.card10 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/gun-rights.jpg');
+}
+
+.card11 {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-image: url('/election.jpg');
 }
 
 .card:hover,
@@ -122,8 +242,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
-
-.topic {
-  display: inline-block;
 }

@@ -1,7 +1,7 @@
 export default function Screener() {
     return (
         <form>
-            <label className="sr-only"></label>
+            <label className="sr-only">First name</label>
             <input type="text" id="first-name" name="first-name" placeholder="First name"></input>
 
             <p>Select what applies best for you:</p>
