@@ -4,73 +4,73 @@ import Link from 'next/link'
 
 function FirstTopic() {
   return (
-    <div>
-      <h2>
-        <Link href="/reopening-schools">
-          Reopening schools
-        </Link>
-      </h2>
-    </div>
+    <Link href="/reopening-schools">
+        <div className={styles.card}>
+        <h2>
+            Reopening schools
+        </h2>
+        </div>
+    </Link>
   )
 }
 
 function SecondTopic() {
   return (
-    <div>
-      <h2>
-        <Link href="/gun-reform">
-          Gun reform
-        </Link>
-      </h2>
-    </div>
+    <Link href="/gun-reform">
+        <div className={styles.card}>
+        <h2>
+            Gun reform
+        </h2>
+        </div>
+    </Link>
   )
 }
 
 function ThirdTopic() {
   return (
-    <div>
-      <h2>
-        <Link href="/healthcare">
-          Healthcare
-        </Link>
-      </h2>
-    </div>
+    <Link href="/healthcare">
+        <div className={styles.card}>
+        <h2>
+            Healthcare
+        </h2>
+        </div>
+    </Link>
   )
 }
 
 function FourthTopic() {
   return (
-    <div>
-      <h2>
-        <Link href="/economic-racism">
-          Economic racism
-        </Link>
-      </h2>
-    </div>
+    <Link href="/economic-racism">
+        <div className={styles.card}>
+        <h2>
+            Economic racism
+        </h2>
+        </div>
+    </Link>
   )
 }
 
 function FifthTopic() {
   return (
-    <div>
-      <h2>
-        <Link href="/reproductive-rights">
-          Reproductive rights
-        </Link>
-      </h2>
-    </div>
+    <Link href="/reproductive-rights">
+        <div className={styles.card}>
+        <h2>
+            Reproductive rights
+        </h2>
+        </div>
+    </Link>
   )
 }
 
 function SixthTopic() {
   return (
-    <div>
-      <h2>
-        <Link href="/unions">
-          Unions
-        </Link>
-      </h2>
-    </div>
+    <Link href="/unions">
+        <div className={styles.card}>
+        <h2>
+            Unions
+        </h2>
+        </div>
+    </Link>
   )
 }
 
@@ -79,33 +79,26 @@ export default function TopicOfConversation() {
     <div className={styles.container}>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        {/* <h1 className={styles.title}>
           Topics of Conversation
         </h1>
 
         <p className={styles.description}>
           Choose a topic<br/>Read an article or watch a video<br/>Discuss!
-        </p>
+        </p> */}
 
-        <FirstTopic />
-        <SecondTopic />
-        <ThirdTopic />
-        <FourthTopic />
-        <FifthTopic />
-        <SixthTopic />
+        <div className={styles.topic}>
+            <FirstTopic />
+            <SecondTopic />
+            <ThirdTopic />
+        </div>
+        <div className={styles.topic}>
+            <FourthTopic />
+            <FifthTopic />
+            <SixthTopic />
+        </div>
         
       </main>
-
-      <footer className={styles.footer}>
-        <div>
-          <h3>
-            MiddleGround
-          </h3>
-          <p>
-            Created by Joe, Johnii, Thomas, Caitlin, Enrique, Karina, and Zachary
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }

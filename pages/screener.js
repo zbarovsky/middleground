@@ -1,8 +1,8 @@
 export default function Screener() {
     return (
         <form>
-            <label for="first-name">First name:</label>
-            <input type="text" id="first-name" name="first-name"></input>
+            <label className="sr-only"></label>
+            <input type="text" id="first-name" name="first-name" placeholder="First name"></input>
 
             <p>Select what applies best for you:</p>
 
