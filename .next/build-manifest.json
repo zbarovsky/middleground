@@ -29,10 +29,25 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/climate-science": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/climate-science.js"
+    ],
     "/conversation-topics": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/conversation-topics.js"
+    ],
+    "/gun-reform": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/gun-reform.js"
+    ],
+    "/healthcare": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/healthcare.js"
     ]
   },
   "ampFirstPages": []
