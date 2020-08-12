@@ -3,8 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/conversation-topics": "pages/conversation-topics.js",
-  "/climate-science": "pages/climate-science.js",
-  "/gun-reform": "pages/gun-reform.js",
   "/healthcare": "pages/healthcare.js"
 }
