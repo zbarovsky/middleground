@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/healthcare": "pages/healthcare.js"
+  "/healthcare": "pages/healthcare.js",
+  "/screener": "pages/screener.js",
+  "/": "pages/index.js"
 }
