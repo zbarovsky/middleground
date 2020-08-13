@@ -97,7 +97,7 @@ function EighthTopic() {
 }
 function NinthTopic() {
   return (
-    <Link href="/climate-science">
+    <Link href="/climateScience">
         <div className={styles.card, styles.climate}>
         <h3>
             Climate science
