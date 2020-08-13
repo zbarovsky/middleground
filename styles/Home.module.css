@@ -165,8 +165,8 @@
   border-color: black;
 }
 
-.secondMessage,
-.thirdMessage {
+.firstMessage,
+.secondMessage {
   height: 5vh;
   margin-bottom: 3vh;
   line-height: 5vh;
