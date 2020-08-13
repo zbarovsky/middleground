@@ -36,7 +36,6 @@ function showMessage(e) {
                         <div className={styles.firstMessage} id="first-message">
                             <p>I thought this article was interesting!</p>
                         </div>
-
                         <div className={styles.secondMessage}>
                             <p>So did I!</p>
                         </div>
@@ -47,6 +46,7 @@ function showMessage(e) {
                             <button onClick={showMessage}>Send</button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
