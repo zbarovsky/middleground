@@ -29,10 +29,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/chat.js"
     ],
-    "/topicPage": [
+    "/conversation-topics": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/topicPage.js"
+      "static/chunks/pages/conversation-topics.js"
+    ],
+    "/screener": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/screener.js"
     ]
   },
   "ampFirstPages": []
