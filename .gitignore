@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 node_modules
->>>>>>> 524e20c05c9afc1342133758110691bc2a2565c7
 .next
 .env
 .env.build

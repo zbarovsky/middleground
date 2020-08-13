@@ -181,8 +181,8 @@
 .participants,
 .participants img {
   margin-bottom: 2vh;
-  height: 8vh;
-  width: 4.5vw;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   object-fit: cover;
 }
