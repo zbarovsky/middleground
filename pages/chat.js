@@ -12,9 +12,16 @@ export default function Chat() {
     // to switch the display to block
     // currently, i think useEffect runs on page render
     // so it immediately overwrites my CSS rule
-    useEffect(() => {
-        document.getElementById("first-message").style.display = "block"
-    })
+
+    // const [showMessage, setShowMessage] = useState(false)
+
+function showMessage(e) {
+    e.preventDefault()
+    document.getElementById("first-message").style.display = "block"
+    
+}
+
+    // ["I thought this article was interesting!", "So did I!"]
 
     return (
         <div>
@@ -37,7 +44,7 @@ export default function Chat() {
 
                         <form className={styles.chatbox}>
                             <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
-                            <button onClick={useEffect}>Send</button>
+                            <button onClick={showMessage}>Send</button>
                         </form>
                     </div>
                 </div>
