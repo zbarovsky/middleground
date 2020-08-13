@@ -166,7 +166,11 @@
 }
 
 .firstMessage {
-  display: none
+  display: none;
+}
+
+.secondMessage {
+  display: none;
 }
 
 @media (max-width: 600px) {
