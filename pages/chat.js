@@ -31,7 +31,7 @@ function showThirdMessage() {
 }
 function Messages(e) {
     e.preventDefault()
-    document.getElementById("second-message").style.display = "block"
+    //document.getElementById("second-message").style.display = "block"
     setTimeout(showThirdMessage, 5000)
 }
 
@@ -44,7 +44,6 @@ function Messages(e) {
                 <div class="row">
                     <div class="col-sm">
                         <Participants />
-                        <Participants />
                     </div>
                     <div class="col-lg .offset-md-4">
                         <div className={styles.botResponse}>
@@ -53,18 +52,13 @@ function Messages(e) {
                         <div className={styles.firstMessage} id="first-message">
                             <p>I thought this article was interesting!</p>
                         </div>
-                        <div className={styles.botResponseTwo} id='second-message'>
+                        <div className={styles.botResponseTwo} id='third-message'>
                             <p>Look we agree on something!</p>
                         </div>
 
-                        <div className={styles.secondMessage} id="third-message">
-                            <p>I thought this article was interesting!</p>
-                        </div>
-
-
                         <form className={styles.chatbox}>
                             <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
-                            <button onClick={Messages}>Send</button>
+                            <button onClick={showMessage}>Send</button>
                         </form>
                     </div>
 

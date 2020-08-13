@@ -165,8 +165,8 @@
   border-color: black;
 }
 
-.secondMessage,
-.thirdMessage {
+.firstMessage,
+.secondMessage {
   height: 5vh;
   margin-bottom: 3vh;
   line-height: 5vh;
@@ -225,4 +225,16 @@
     width: 80%;
     flex-direction: column;
   }
+}
+
+.participantNames {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.participantDescription {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-size: 10px;
 }
