@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import Participants from './chat-participants'
+import Navbar from '../components/navbar'
 
 export default function Chat() {
 
@@ -11,29 +12,41 @@ export default function Chat() {
     // to switch the display to block
     // currently, i think useEffect runs on page render
     // so it immediately overwrites my CSS rule
-    useEffect(() => {
-        document.getElementById("first-message").style.display = "block"
-    })
+
+    // const [showMessage, setShowMessage] = useState(false)
+
+function showMessage(e) {
+    e.preventDefault()
+    document.getElementById("first-message").style.display = "block"
+    
+}
+
+    // ["I thought this article was interesting!", "So did I!"]
 
     return (
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <Participants />
-                    <Participants />
-                </div>
-                <div class="col-lg .offset-md-4">
-                    <div className={styles.firstMessage} id="first-message">
-                        <p>I thought this article was interesting!</p>
+        <div>
+            <Navbar />
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <Participants />
+                        <Participants />
+                    </div>
+                    <div class="col-lg .offset-md-4">
+                        <div className={styles.firstMessage} id="first-message">
+                            <p>I thought this article was interesting!</p>
+                        </div>
+                        <div className={styles.secondMessage}>
+                            <p>So did I!</p>
+                        </div>
+
+
+                        <form className={styles.chatbox}>
+                            <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
+                            <button onClick={showMessage}>Send</button>
+                        </form>
                     </div>
 
-                    <div className={styles.secondMessage}>
-                        <p>So did I!</p>
-                    </div>
-                    <form className={styles.chatbox}>
-                        <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
-                        <button onClick={useEffect}>Send</button>
-                    </form>
                 </div>
             </div>
         </div>
