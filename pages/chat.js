@@ -26,8 +26,10 @@ export default function Chat() {
                         <Participants />
                     </div>
                     <div class="col-lg .offset-md-4">
-
-                        <div className={styles.thirdMessage} id="third-message">
+                        <div className={styles.firstMessage} id="first-message">
+                            <p>I thought this article was interesting!</p>
+                        </div>
+                        <div className={styles.secondMessage}>
                             <p>So did I!</p>
                         </div>
 
@@ -41,6 +43,7 @@ export default function Chat() {
                             <button onClick={Messages}>Send</button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
