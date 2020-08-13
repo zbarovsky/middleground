@@ -259,3 +259,7 @@ a {
   margin-top: 8vh;
   margin-left: 34vw;
 }
+
+.chatBar {
+  border-radius: 12px;
+}

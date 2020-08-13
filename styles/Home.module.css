@@ -218,6 +218,7 @@
 
 .chatbox {
   width: 20vw;
+  padding: 10px;
 }
 
 @media (max-width: 600px) {

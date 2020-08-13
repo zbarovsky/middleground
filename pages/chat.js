@@ -5,11 +5,6 @@ import Navbar from '../components/navbar'
 
 export default function Chat() {
 
-    function showThirdMessage() {
-        console.log("################ TESTS")
-        document.getElementById("third-message").style.display = "block"
-    }
-
     // in Home.module.css,
     // i have the display of the first message set to none
     // on click, i want to use useEffect
@@ -57,8 +52,8 @@ function Messages(e) {
                         </div>
 
                         <form className={styles.chatbox}>
-                            <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
-                            <button onClick={showMessage}>Send</button>
+                            <input  className='chatBar' size='100' placeholder="Hello! I am filler text. Nice to meet you!"></input>
+                            <button onClick={showMessage} hidden='true'>Send</button>
                         </form>
                     </div>
 
