@@ -173,6 +173,12 @@
   display: none;
 }
 
+.participants {
+  border-radius: 50%;
+  height: 5vh;
+  width: 5vw;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 80%;
