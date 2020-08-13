@@ -17,17 +17,16 @@ export default function Chat() {
 
     return (
         <div>
-            <div class="container">
+            {/* <div class="container">
                 <div class="row">
                     <div class="col-sm">
                         <Participants />
-                        <Participants />
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div class="container">
                 <div class="row">
-                    <div class="col-lg">
+                    <div class="col-lg .offset-md-4">
                         <div className={styles.firstMessage} id="first-message">
                             <p>I thought this article was interesting!</p>
                         </div>
