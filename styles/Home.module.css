@@ -179,6 +179,34 @@
   text-align: center;
 }
 
+.botResponse {
+  height: 5vh;
+  margin-bottom: 3vh;
+  margin-left: 30vw;
+  width: 30vw;
+  display: block;
+  background-color: #3DDC84;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  justify-content: start;
+  word-wrap: wrap;
+}
+
+.botResponseTwo {
+  height: 5vh;
+  margin-bottom: 3vh;
+  margin-left: 30vw;
+  width: 30vw;
+  display: none;
+  background-color: #3DDC84;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  justify-content: start;
+  word-wrap: wrap;
+}
+
 .participants,
 .participants img {
   margin-bottom: 2vh;
