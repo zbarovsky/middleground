@@ -30,8 +30,6 @@ export default function Chat() {
                     <div className={styles.secondMessage}>
                         <p>So did I!</p>
                     </div>
-
-
                     <form className={styles.chatbox}>
                         <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
                         <button onClick={useEffect}>Send</button>
