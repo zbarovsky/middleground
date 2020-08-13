@@ -47,9 +47,9 @@ export default function TopicPage() {
     <ArticleCard media={article}/>
   )
 
-  const timerTransition = () => {
-    
-  }
+  // const timerTransition = () => {
+
+  // }
 
   
   
