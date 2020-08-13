@@ -165,18 +165,30 @@
   border-color: black;
 }
 
-.firstMessage {
-  display: none;
-}
-
+.firstMessage,
 .secondMessage {
+  height: 5vh;
+  margin-bottom: 3vh;
+  line-height: 5vh;
+  width: 20vw;
   display: none;
+  background-color: blue;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
 }
 
-.participants {
+.participants,
+.participants img {
+  margin-bottom: 2vh;
+  height: 8vh;
+  width: 4.5vw;
   border-radius: 50%;
-  height: 5vh;
-  width: 5vw;
+  object-fit: cover;
+}
+
+.chatbox {
+  width: 20vw;
 }
 
 @media (max-width: 600px) {
