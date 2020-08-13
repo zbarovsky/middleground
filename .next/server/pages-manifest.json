@@ -4,4 +4,5 @@
   "/_document": "pages/_document.js",
   "/conversation-topics": "pages/conversation-topics.js",
   "/topicPage": "pages/topicPage.js"
+  "/video": "pages/video.js"
 }

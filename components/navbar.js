@@ -7,7 +7,7 @@ export default function Navbar () {
                 <a className='navTitle'>Breaking Bread</a>
                 <ul className='nav'>
                     <li className='navItem'>
-                        <Link href='/'>
+                        <Link href='/conversation-topics'>
                             <a>Home</a>
                         </Link>
                     </li>
@@ -19,6 +19,11 @@ export default function Navbar () {
                     <li className='navItem'>
                         <Link href='/'>
                             <a>My Account</a>
+                        </Link>
+                    </li>
+                    <li className='navItem'>
+                        <Link href='/about'>
+                            <a>About</a>
                         </Link>
                     </li>
                     <li className='navItem'>

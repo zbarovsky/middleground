@@ -235,3 +235,13 @@ border-radius: 10px;
   color: white;
   text-decoration: none;
 }
+
+.vidTitle {
+  text-align: center;
+  margin-top: 12vh;
+}
+
+.instructionVid {
+  margin-top: 8vh;
+  margin-left: 34vw;
+}
