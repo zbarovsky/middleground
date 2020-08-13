@@ -44,7 +44,6 @@ function Messages(e) {
                 <div class="row">
                     <div class="col-sm">
                         <Participants />
-                        <Participants />
                     </div>
                     <div class="col-lg .offset-md-4">
                         <div className={styles.botResponse}>
