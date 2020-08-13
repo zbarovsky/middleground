@@ -47,7 +47,6 @@ export default function TopicPage() {
     <ArticleCard media={article} disable={useState}/>
   )
  
-
   return (
     <>
     <div>

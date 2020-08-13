@@ -1,67 +1,55 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"></link>
+        <title>Breaking Bread</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></link>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      
+      <main>
+          <div>
+            <div className='leftIndex'>
+              <aside>
+                  <div className='logo'>
+                    <img src='./logo.png' alt='breaking bread logo: two baguets crossing'/>
+                  </div>
+                  <div className='title'>
+                    <h1>Breaking Bread</h1>
+                  </div>
+                  <div className='titleTwo'>
+                    <p>Read. Talk. Listen.</p>
+                  </div>
+                </aside>
+              </div>
+            <div className='slogan'>
+              <h3>Have a conversation and see what the other side has to say</h3>
+            </div>
+            <form className="logIn">
+              <div className='form-group'> 
+                <label className='sr-only'>Email or Phone Number</label>
+                <input className="form-control input" type='text' name='email' placeholder='Email or Phone Number'></input>
+              </div>
+              <div>
+                <label className='sr-only'>Password</label>
+                <input className="form-control mb-2 input" type='text' name='password' placeholder='Password' required></input>
+              </div>
+              <Link href='/conversation-topics'>
+                <button className='logInBtn'for='email' type='submit' required>Log In</button>
+              </Link>
+              <br />
+              <div className='forgotPwd'>
+                <a href='/'>Forgot Password?</a>
+              </div>
+              <br />
+              <button type='submit' className='logInBtnTwo'>Create New Account</button>
+            </form>
+          </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
