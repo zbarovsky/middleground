@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import ArticleCard from './ArticleCard'
 import Link from 'next/link'
+import Navbar from '../components/navbar'
 
 export default function TopicPage() {
-  const [disableButton, setDisableButton] = useState(true)
+  // const [disableButton, setDisableButton] = useState(true)
   let media = [ 
     {
       image: "/cnn.png",
@@ -44,15 +45,16 @@ export default function TopicPage() {
   ]
     
   const cards = media.map((article) => 
-    <ArticleCard media={article} disable={useState}/>
+    <ArticleCard media={article} />
   )
  
   return (
     <>
+    <Navbar />
     <div>
       {cards}
     </div>
-    <Link href="/chat"><button id="continue" disable={disableButton}>Continue</button></Link>
+    <Link href="/chat"><button id="continue">Continue</button></Link>
   </>
   )
 }

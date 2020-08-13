@@ -15,7 +15,7 @@ export default function ArticleCard({media}) {
     setShowModal(true)
     let timeToRead = setInterval((alertMe), 2000)
     console.log("timer started")
-    setDisableButton = false
+    // setDisableButton = false
   }
 
   function alertMe() {
@@ -24,7 +24,7 @@ export default function ArticleCard({media}) {
   
   return (
     <>
-      <div id={media.name} className="row modalButton" onClick={showMediaAndStartTimer}>
+      <div id={media.name} className="row modalClick" onClick={showMediaAndStartTimer}>
         <img className="mediaImage" src={media.image}></img>
         <h1 className="mediaOutlet">{media.outlet}</h1>
         <h1 className="mediaName">{media.name}</h1>
