@@ -1,4 +1,3 @@
-.next
 .env
 .env.build
 node_modules
@@ -7,3 +6,4 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 build
+.next
