@@ -165,14 +165,17 @@
   border-color: black;
 }
 
-.firstMessage {
+.firstMessage,
+.secondMessage {
+  height: 5vh;
+  margin-bottom: 3vh;
+  line-height: 5vh;
+  width: 20vw;
   display: none;
   background-color: blue;
   border-radius: 5%;
-}
-
-.secondMessage {
-  display: none;
+  color: white;
+  text-align: center;
 }
 
 .participants,
@@ -181,6 +184,10 @@
   width: 5vw;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.chatbox {
+  width: 20vw;
 }
 
 @media (max-width: 600px) {

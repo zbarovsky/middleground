@@ -3,6 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/conversation-topics": "pages/conversation-topics.js",
-  "/chat": "pages/chat.js",
-  "/screener": "pages/screener.js"
+  "/chat": "pages/chat.js"
 }
