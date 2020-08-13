@@ -18,7 +18,17 @@ export default function Chat() {
 function showMessage(e) {
     e.preventDefault()
     document.getElementById("first-message").style.display = "block"
-    
+    setTimeout(Messages(e), 5000)
+}
+
+function showThirdMessage() {
+    console.log("################ TESTS")
+    document.getElementById("third-message").style.display = "block"
+}
+function Messages(e) {
+    e.preventDefault()
+    document.getElementById("second-message").style.display = "block"
+    setTimeout(showThirdMessage, 5000)
 }
 
     // ["I thought this article was interesting!", "So did I!"]
@@ -33,11 +43,14 @@ function showMessage(e) {
                         <Participants />
                     </div>
                     <div class="col-lg .offset-md-4">
+                        <div className={styles.botResponse}>
+                            <p>Hello, My name is Tom. I thought the article was interesting. How about you?</p>
+                        </div>
                         <div className={styles.firstMessage} id="first-message">
                             <p>I thought this article was interesting!</p>
                         </div>
-                        <div className={styles.secondMessage}>
-                            <p>So did I!</p>
+                        <div className={styles.botResponseTwo} id='second-message'>
+                            <p>Look we agree on something!</p>
                         </div>
 
 
