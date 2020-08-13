@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
+
   return (
     <div>
       <Head>
@@ -35,7 +37,9 @@ export default function Home() {
                 <label className='sr-only'>Password</label>
                 <input className="form-control mb-2 input" type='text' name='password' placeholder='Password' required></input>
               </div>
-              <button className='logInBtn'for='email' type='submit' required>Log In</button>
+              <Link href='/conversation-topics'>
+                <button className='logInBtn'for='email' type='submit' required>Log In</button>
+              </Link>
               <br />
               <div className='forgotPwd'>
                 <a href='/'>Forgot Password?</a>
