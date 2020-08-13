@@ -37,7 +37,9 @@ export default function Home() {
               </div>
               <button className='logInBtn'for='email' type='submit' required>Log In</button>
               <br />
-              <a href='/'>Forgot Password?</a>
+              <div className='forgotPwd'>
+                <a href='/'>Forgot Password?</a>
+              </div>
               <br />
               <button type='submit' className='logInBtnTwo'>Create New Account</button>
             </form>
