@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Ubuntu, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +13,78 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.leftIndex {
+  float: left;
+  width: 50%;
+  height: 1200px;
+  background-color: #CDA988;
+}
+
+.logo {
+  margin-left: 15vw;
+  margin-top: 20vh;
+  margin-bottom: 2vh;
+}
+
+.title {
+  color: white;
+  margin-left: 16vw;
+  margin-bottom: 1.5vh;
+  font-size: 64px;
+}
+
+.titleTwo {
+  margin-left: 17vw;
+  color: white;
+  font-size: 30px;
+}
+
+.slogan {
+  display: flex;
+  text-align: center;
+  width: 30%;
+  word-wrap: wrap;
+  line-height: 41px;
+  padding: 20vh 2vw 2vh 2vw;
+  margin-left: 60vw;
+  margin-bottom: 2vh;
+}
+
+.logIn {
+  width: 300px;
+  margin-left: 65vw;
+}
+
+.logInBtn {
+  align-items: center;
+  text-align: center;
+  padding: 5px 125px;
+  background: #CDA988;
+  border: 1px solid #BBBBBB;
+  border-radius: 10px;
+  color: white;
+}
+
+.forgotPwd {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.logInBtnTwo {
+  align-items: center;
+  text-align: center;
+  padding: 5px 100px;
+  background: #CDA988;
+  border: 1px solid #BBBBBB;
+  border-radius: 10px;
+  color: white;
+}
+
+.input {
+  background: #FFFFFF;
+border: 2px solid #CDA988;
+border-radius: 10px;
 }
