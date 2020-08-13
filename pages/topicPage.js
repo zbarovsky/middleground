@@ -6,22 +6,23 @@ import Link from 'next/link'
 export default function TopicPage() {
   let STARTING_TIME = 60;
   let remainingTime
-  // useEffect(() => {
-  //   let continueButton = document.getElementById("continue")
-  //   let timeToRead = setTimeout(endTimer, 3000)
-  //   remainingTime = STARTING_TIME
-  //   console.log("TIMER STARTED")
-  //   if (remainingTime === 0) {
-  //     continueButton.disabled=false
-  //     document.getElementById("continue").style.color = 'brown'
-  //   } else {
-  //     continueButton.disabled=true
-  //   }
-  // }), []
+  useEffect(() => {
+    let continueButton = document.getElementById("continue")
+    let timeToRead = setTimeout(endTimer, 3000)
+    remainingTime = STARTING_TIME
+    remainingTime--
+    console.log("TIMER STARTED")
+    if (remainingTime === 0) {
+      continueButton.disabled=false
+      document.getElementById("continue").style.color = 'brown'
+    } else {
+      continueButton.disabled=true
+    }
+  }), []
 
-  // function endTimer() {
-  //   console.log("TIMER FINISHED YOU CAN CONTINUE")
-  // }
+  function endTimer() {
+    console.log("TIMER FINISHED YOU CAN CONTINUE")
+  }
   
   let media = [ 
     {
