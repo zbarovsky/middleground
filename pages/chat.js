@@ -32,14 +32,13 @@ export default function Chat() {
                         <div className={styles.botResponse}>
                             <p id="commentOne">I thought this article was interesting!</p>
                         </div>
-                            <img id="chatImage" src="/avatarTwo.png" /> 
+                             
                         <div className={styles.firstMessage} id="first-message">
                             <p>So did I!</p>
                         </div>
 
                         <div className={styles.botResponseTwo} id="third-message">
                             <p id="commentTwo">Look, we agree on something! </p>
-                            <img id="chatImageThree" src="/avatarTwo.png" />
                         </div>
                             
 
