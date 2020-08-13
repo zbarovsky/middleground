@@ -12,9 +12,9 @@ export default function TopicPage() {
     remainingTime = STARTING_TIME
     remainingTime--
     console.log("TIMER STARTED")
-    if (remainingTime === 0) {
+    if (remainingTime = 0) {
       continueButton.disabled=false
-      document.getElementById("continue").style.color = 'brown'
+      document.getElementById("continue").style.backgroundColor = 'brown'
     } else {
       continueButton.disabled=true
     }
