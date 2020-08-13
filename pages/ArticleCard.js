@@ -1,21 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
-
 export default function ArticleCard({media}) {
+  
+
   const [showModal, setShowModal] = useState(false)
+  
 
   function handleCloseModal() {
     setShowModal(false);
   } 
-  
-  function showMedia() {
+ 
+  function showMediaAndStartTimer() {
     setShowModal(true)
-    }
+    let timeToRead = setInterval((alertMe), 2000)
+    console.log("timer started")
+    setDisableButton = false
+  }
 
+  function alertMe() {
+    console.log("TIMER ENDED!!!!!!!")
+  }
+  
   return (
     <>
-      <div id={media.name} className="row modalButton" onClick={showMedia}>
+      <div id={media.name} className="row modalButton" onClick={showMediaAndStartTimer}>
         <img className="mediaImage" src={media.image}></img>
         <h1 className="mediaOutlet">{media.outlet}</h1>
         <h1 className="mediaName">{media.name}</h1>

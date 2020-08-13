@@ -21,16 +21,17 @@ a {
 }
 
 .mediaImage {
-  width: 520px;
-  height: 220px;
+  width: 28vw;
+  height: 18vh;
   margin: 15px;
+  margin-left: 5vw;
 }
 
 .mediaOutlet {
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 39px;
   color: #979797;
   margin-top: 10px;
