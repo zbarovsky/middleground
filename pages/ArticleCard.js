@@ -14,12 +14,6 @@ export default function ArticleCard({media}) {
     setShowModal(true)
   }
 
-  
-
-  function alertMe() {
-    console.log("TIMER ENDED!!!!!!!")
-  }
-  
   return (
     <>
       <div id={media.name} className="row modalClick" onClick={showMedia}>
@@ -29,7 +23,7 @@ export default function ArticleCard({media}) {
         <h2 className="mediaSubtitle">{media.subtitle}</h2>
       </div>
       <div className="modalWindow">
-        <Modal size="lg" show={showModal} dialogClassName="modal-90w" className='modalContent'>
+        <Modal size="lg" show={showModal} className='modalContent'>
             <Modal.Body id="mediaModal">
                 <div class="closeButton">
                     <button class="closeModal" onClick={handleCloseModal} >&times;</button>
