@@ -57,7 +57,7 @@ function Messages(e) {
                             <p>Look we agree on something!</p>
                         </div>
 
-                        <div className={styles.secondMessage} id="second-message">
+                        <div className={styles.secondMessage} id="third-message">
                             <p>I thought this article was interesting!</p>
                         </div>
 
