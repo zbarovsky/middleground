@@ -20,6 +20,7 @@ export default function Chat() {
             <div class="row">
                 <div class="col-sm">
                     <Participants />
+                    <Participants />
                 </div>
                 <div class="col-lg .offset-md-4">
                     <div className={styles.firstMessage} id="first-message">
