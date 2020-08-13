@@ -1,26 +1,57 @@
 import React, { useState, useEffect } from 'react'
+import styles from '../styles/Home.module.css'
+import Participants from './chat-participants'
 
 export default function Chat() {
 
+
+    // in Home.module.css,
+    // i have the display of the first message set to none
+    // on click, i want to use useEffect
+    // to switch the display to block
+    // currently, i think useEffect runs on page render
+    // so it immediately overwrites my CSS rule
     useEffect(() => {
-        document.getElementsByClassName("first-message").hidden = false
-    }, [])
+        document.getElementById("first-message").style.display = "block"
+    })
 
     return (
         <div>
-
-            <div className="first-message" hidden>
-                <p>I thought this article was interesting!</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <Participants />
+                        <Participants />
+                    </div>
+                </div>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div className={styles.firstMessage} id="first-message">
+                            <p>I thought this article was interesting!</p>
+                        </div>
 
-            <div className="second-message" hidden>
+                        <div className={styles.secondMessage}>
+                            <p>So did I!</p>
+                        </div>
 
+
+                        <form>
+                            <textarea>Hello! I am filler text. Nice to meet you!</textarea>
+                            <button onClick={useEffect}>Send</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <form>
-                <textarea>Hello! I am filler text. Nice to meet you!</textarea>
-                <button onClick={useEffect}>Send</button>
-            </form>
         </div>
     )
 }
+
+<div class="container">
+<div class="row">
+    <div class="col-sm">
+        <Participants />
+    </div>
+    </div>
+    </div>
