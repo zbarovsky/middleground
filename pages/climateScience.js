@@ -1,99 +1,65 @@
 import React, { useState } from 'react';
-
 import Modal from 'react-bootstrap/Modal';
+import ArticleCard from './ArticleCard'
 
 
 export default function TopicPage() {
   let media = [ 
     {
-      image: "https://climate.nasa.gov/system/content_pages/main_images/203_co2-graph-061219.jpg",
-      name: "Nasa Climate Change",
-      subtitle: "",
-      url: "https://climate.nasa.gov/evidence/"
+      image: "/cnn.png",
+      outlet: "CNN",
+      name: "Dr. Sanjay Gupta: Why I am not sending my kids back to school",
+      subtitle: "By the first week of August, 90 children in the US had died of COVID-19, which represents less than 1% of all deaths.",
+      url: "https://www.cnn.com/2020/08/12/health/covid-kids-school-gupta-essay/index.html"
     },
     {
-      image: "",
-      name: "",
-      subtitle: "",
-      url: ""
+      image: "/fox.png",
+      outlet: "Fox News",
+      name: "Dr. Marc Siegel details risks to children if schools don't reopen",
+      subtitle: "In the meantime, let's show our kids courage. Dr. Siegel says.",
+      url: "https://www.foxnews.com/health/school-open-kids-children-coronavirus-covid"
     },
     {
-      image: "",
-      name: "",
-      subtitle: "",
-      url: ""
+      image: "/washingtonPost.png",
+      outlet: "The Washington Post",
+      name: "Stop justifying school reopening based on false statements",
+      subtitle: "These statements are being used to justify school reopening, and they're just not true.",
+      url: "https://www.washingtonpost.com/opinions/2020/08/11/children-schools-coronavirus-leana-wen/"
     },
     {
-      image: "",
-      name: "",
-      subtitle: "",
-      url: ""
+      image: "/trump.png",
+      outlet: "Washington Examiner",
+      name: "Trump school reopening strategy on track to fial politically: GOP operatives",
+      subtitle: "Republican strategies are warning that President Trump's push to reopen schools will flop with critical suburban voters. ",
+      url: "https://www.washingtonexaminer.com/news/campaigns/trump-school-reopening-strategy-on-track-to-fail-politically-gop-operatives"
     },
     {
-      image: "",
-      name: "",
-      subtitle: "",
-      url: ""
+      image: "/theHill.png",
+      outlet: "The Hill",
+      name: "6 in 10 oppose fully reopening schools: poll",
+      subtitle: "The percentage is a slight increase from last month, when 53% of voters were against a full reopening.",
+      url: "https://thehill.com/homenews/news/511639-6-in-10-oppose-fully-reopening-schools-polltten.com/200/100"
     },
-    
   ]
-  const [showModal, setShowModal] = useState(false)
 
-  function handleCloseModal() {
-    setShowModal(false);
-  } 
-  
-  function showMedia() {
-    setShowModal(true)
-    // let modalButtons = getElementsByClassName("modalButton")
-    // for (let i=0; i<modalButtons.length; i++) {
-    //   modalButtons[i].addEventListener("click", function(e) {
-      // iframeURL = (e.target.id).url
-      // iframeElement.src = iframeURL
-    // })
-    }
     
+  const cards = media.map((article) => 
+    <ArticleCard media={article}/>
+  )
+
+  const timerTransition = () => {
+    
+  }
+
+  
   
     
   return (
-  <div>
-    <div id={media[0]} className="modalButton" onClick={showMedia}>
-      <img src={media[0].image}></img>
-      <h1 className="mediaName">{media[0].name}</h1>
-      <h2 className="mediaSubtitle">{media[0].subtitle}</h2>
+    <>
+    <div>
+      {cards}
     </div>
-    <div id={media[1]} className="modalButton" onClick={showMedia}>
-      <img src={media[1].image}></img>
-      <h1 className="mediaName">{media[1].name}</h1>
-      <h2 className="mediaSubtitle">{media[1].subtitle}</h2>
-    </div>
-    <div id={media[2]} className="modalButton" onClick={showMedia}>
-      <img src={media[2].image}></img>
-      <h1 className="mediaName">{media[2].name}</h1>
-      <h2 className="mediaSubtitle">{media[2].subtitle}</h2>
-    </div>
-    <div id={media[3]} className="modalButton" onClick={showMedia}>
-      <img src={media[3].image}></img>
-      <h1 className="mediaName">{media[3].name}</h1>
-      <h2 className="mediaSubtitle">{media[3].subtitle}</h2>
-    </div>
-    <div id={media[4]} className="modalButton" onClick={showMedia}>
-      <img src={media[4].image}></img>
-      <h1 className="mediaName">{media[4].name}</h1>
-      <h2 className="mediaSubtitle">{media[4].subtitle}</h2>
-    </div>
-    <div className="modalWindow">
-      <Modal show={showModal} className='modalContent'>
-          <Modal.Body id="mediaModal">
-              <div class="closeButton">
-                  <button class="closeModal" onClick={handleCloseModal} >&times;</button>
-              </div>
-              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe class="embed-responsive-item" src="https://www.pnas.org/content/107/39/E151" allowfullscreen></iframe>
-              </div>
-          </Modal.Body>
-      </Modal>
-    </div>
-  </div>
+    <button id="continue" onClick={timerTransition}>Continue</button>
+  </>
   )
 }

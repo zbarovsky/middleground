@@ -14,3 +14,62 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.modalButton {
+  width: 90%;
+  height: 25%; 
+}
+
+.mediaImage {
+  width: 520px;
+  height: 220px;
+  margin: 15px;
+}
+
+.mediaOutlet {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 39px;
+  color: #979797;
+  margin-top: 10px;
+  position: absolute;
+  left: 523px;
+  margin-bottom: 20px;
+}
+
+.mediaName { 
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 41px;
+  color: #373A3C;
+  position: absolute;
+  left: 523px;
+  margin-top: 70px;
+  margin-left: 0;
+}
+
+.mediaSubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #373A3C;
+  position: absolute;
+  margin-top: 150px;
+  left: 523px;
+}
+
+#continue {
+  position: absolute;
+  width: 175px;
+  height: 62px;
+  left: 1145px;
+  top: 1431px;
+  background: rgba(205, 169, 136, 0.4);
+  border-radius: 10px;
+}
