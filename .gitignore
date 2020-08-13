@@ -1,4 +1,4 @@
-node_modules
+*/.next/
 .next
 .env
 .env.build
@@ -8,3 +8,4 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 build
+.next/*
