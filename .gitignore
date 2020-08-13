@@ -1,3 +1,5 @@
+node_modules
+.next
 .env
 .env.build
 node_modules
@@ -6,7 +8,3 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 build
-<<<<<<< HEAD
-.next
-=======
->>>>>>> topicPage

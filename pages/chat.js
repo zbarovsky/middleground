@@ -1,8 +1,26 @@
-import ClimateScience from "./topicPage"
+import React, { useState, useEffect } from 'react'
 
 export default function Chat() {
-  console.log("you made it")
-  return (
-    <h1>Welcome to the CHAT</h1>
-  )
+
+    useEffect(() => {
+        document.getElementsByClassName("first-message").hidden = false
+    }, [])
+
+    return (
+        <div>
+
+            <div className="first-message" hidden>
+                <p>I thought this article was interesting!</p>
+            </div>
+
+            <div className="second-message" hidden>
+
+            </div>
+
+            <form>
+                <textarea>Hello! I am filler text. Nice to meet you!</textarea>
+                <button onClick={useEffect}>Send</button>
+            </form>
+        </div>
+    )
 }
