@@ -4,10 +4,7 @@ import Navbar from '../components/navbar'
 import Link from 'next/link'
 
 export default function TopicPage() {
-  let STARTING_TIME = 60;
-  let remainingTime
   useEffect(() => {
-    let continueButton = document.getElementById("continue")
     let timeToRead = setTimeout(endTimer, 3000)
     document.getElementById("continue").style.backgroundColor = "tan"
     document.getElementById("continue").disabled = true
@@ -68,7 +65,7 @@ export default function TopicPage() {
     <div>
       {cards}
     </div>
-    <Link href="/chat"><button id="continue">Continue</button></Link>
+    <Link href="/video"><button id="continue">Continue</button></Link>
   </>
   )
 }

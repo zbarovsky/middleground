@@ -5,6 +5,10 @@ import Navbar from '../components/navbar'
 
 export default function Chat() {
 
+    function showThirdMessage() {
+        console.log("################ TESTS")
+        document.getElementById("third-message").style.display = "block"
+    }
 
     // in Home.module.css,
     // i have the display of the first message set to none
@@ -53,10 +57,14 @@ function Messages(e) {
                             <p>Look we agree on something!</p>
                         </div>
 
+                        <div className={styles.secondMessage} id="second-message">
+                            <p>I thought this article was interesting!</p>
+                        </div>
+
 
                         <form className={styles.chatbox}>
                             <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
-                            <button onClick={showMessage}>Send</button>
+                            <button onClick={Messages}>Send</button>
                         </form>
                     </div>
 

@@ -165,12 +165,13 @@
   border-color: black;
 }
 
-.firstMessage,
-.secondMessage {
+.secondMessage,
+.thirdMessage {
   height: 5vh;
   margin-bottom: 3vh;
   line-height: 5vh;
   width: 20vw;
+  margin-right: 30vw;
   display: none;
   background-color: blue;
   border-radius: 5%;

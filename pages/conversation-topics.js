@@ -16,7 +16,7 @@ function FirstTopic() {
 
 function SecondTopic() {
   return (
-    <Link href="/masks">
+    <Link href="/topicPage2">
         <div className={styles.card, styles.mask}>
         <h3>
             To wear or not to wear
@@ -28,7 +28,7 @@ function SecondTopic() {
 
 function ThirdTopic() {
   return (
-    <Link href="/black-lives-matter">
+    <Link href="/topicPage3">
         <div className={styles.card, styles.blm}>
         <h3>
             BLM
@@ -40,7 +40,7 @@ function ThirdTopic() {
 
 function FourthTopic() {
   return (
-    <Link href="/vaccine">
+    <Link href="/topicPage4">
         <div className={styles.card, styles.vaccine}>
         <h3>
             COVID-19 Vaccine
@@ -52,7 +52,7 @@ function FourthTopic() {
 
 function FifthTopic() {
   return (
-    <Link href="/voting">
+    <Link href="/topicPage5">
         <div className={styles.card, styles.voting}>
         <h3>
             Mail-in voting
@@ -64,7 +64,7 @@ function FifthTopic() {
 
 function SixthTopic() {
   return (
-    <Link href="/reproductive-rights">
+    <Link href="/topicPage6">
         <div className={styles.card, styles.reproductive}>
         <h3>
             Reproductive rights
@@ -75,7 +75,7 @@ function SixthTopic() {
 }
 function SeventhTopic() {
   return (
-    <Link href="/healthcare">
+    <Link href="/topicPage7">
         <div className={styles.card, styles.healthcare}>
         <h3>
             Healthcare
@@ -86,7 +86,7 @@ function SeventhTopic() {
 }
 function EighthTopic() {
   return (
-    <Link href="/social-disparity">
+    <Link href="/topicPage8">
         <div className={styles.card, styles.social}>
         <h3>
             Social disparity
@@ -97,7 +97,7 @@ function EighthTopic() {
 }
 function NinthTopic() {
   return (
-    <Link href="/topicPage">
+    <Link href="/topicPage9">
         <div className={styles.card, styles.climate}>
         <h3>
             Climate science
@@ -108,7 +108,7 @@ function NinthTopic() {
 }
 function TenthTopic() {
   return (
-    <Link href="/gun-rights">
+    <Link href="/topicPage10">
         <div className={styles.card, styles.gun}>
         <h3>
             Gun rights
@@ -119,7 +119,7 @@ function TenthTopic() {
 }
 function EleventhTopic() {
   return (
-    <Link href="/election">
+    <Link href="/topicPage11">
         <div className={styles.card, styles.election}>
         <h3>
             2020 election
