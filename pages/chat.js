@@ -26,9 +26,11 @@ export default function Chat() {
                         <Participants />
                     </div>
                     <div class="col-lg .offset-md-4">
+
                         <div className={styles.thirdMessage} id="third-message">
                             <p>So did I!</p>
                         </div>
+
                         <div className={styles.secondMessage} id="second-message">
                             <p>I thought this article was interesting!</p>
                         </div>
