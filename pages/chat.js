@@ -19,7 +19,7 @@ export default function Chat() {
 
             <form>
                 <textarea>Hello! I am filler text. Nice to meet you!</textarea>
-                <button onClick={send()}>Send</button>
+                <button onClick={useEffect}>Send</button>
             </form>
         </div>
     )
