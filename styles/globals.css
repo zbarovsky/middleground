@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Ubuntu, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +13,185 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.modalButton {
+  width: 90%;
+  height: 25%; 
+}
+
+.mediaImage {
+  width: 28vw;
+  height: 18vh;
+  margin: 15px;
+  margin-left: 5vw;
+}
+
+.mediaOutlet {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  color: #979797;
+  margin-top: 10px;
+  position: absolute;
+  left: 523px;
+  margin-bottom: 20px;
+}
+
+.mediaName { 
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 41px;
+  color: #373A3C;
+  position: absolute;
+  left: 523px;
+  margin-top: 70px;
+  margin-left: 0;
+}
+
+.mediaSubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #373A3C;
+  position: absolute;
+  margin-top: 150px;
+  left: 523px;
+}
+
+#continue {
+  position: absolute;
+  width: 175px;
+  height: 62px;
+  left: 1145px;
+  top: 1431px;
+  background: rgba(205, 169, 136, 0.4);
+  border-radius: 10px;
+}
+
+.leftIndex {
+  float: left;
+  width: 50%;
+  height: 1200px;
+  background-color: #CDA988;
+}
+
+.logo {
+  margin-left: 15vw;
+  margin-top: 20vh;
+  margin-bottom: 2vh;
+}
+
+.title {
+  color: white;
+  margin-left: 16vw;
+  margin-bottom: 1.5vh;
+  font-size: 64px;
+}
+
+.titleTwo {
+  margin-left: 17vw;
+  color: white;
+  font-size: 30px;
+}
+
+.slogan {
+  display: flex;
+  text-align: center;
+  width: 30%;
+  word-wrap: wrap;
+  line-height: 41px;
+  padding: 20vh 2vw 2vh 2vw;
+  margin-left: 60vw;
+  margin-bottom: 2vh;
+}
+
+.logIn {
+  width: 300px;
+  margin-left: 65vw;
+}
+
+.logInBtn {
+  align-items: center;
+  text-align: center;
+  padding: 5px 125px;
+  background: #CDA988;
+  border: 1px solid #BBBBBB;
+  border-radius: 10px;
+  color: white;
+}
+
+.forgotPwd {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.logInBtnTwo {
+  align-items: center;
+  text-align: center;
+  padding: 5px 100px;
+  background: #CDA988;
+  border: 1px solid #BBBBBB;
+  border-radius: 10px;
+  color: white;
+}
+
+.input {
+  background: #FFFFFF;
+border: 2px solid #CDA988;
+border-radius: 10px;
+}
+
+.nav {
+  list-style: none;
+  margin-right: 15vh;
+}
+
+.navbar-custom {
+  background: #CDA988;
+}
+
+.navTitle {
+  padding-left: 10vh;
+  margin-bottom: 1vh;
+  color: white;
+  font-size: 18px;
+}
+
+.navTitle:hover {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.navItem {
+  padding-right: 3vh;
+  margin-bottom: 1vh;
+}
+
+.navItem a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navItem a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.vidTitle {
+  text-align: center;
+  margin-top: 12vh;
+}
+
+.instructionVid {
+  margin-top: 8vh;
+  margin-left: 34vw;
 }

@@ -1,9 +1,9 @@
 {
-  "name": "middleground_next",
+  "name": "middleground",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   },
@@ -16,15 +16,16 @@
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "index.js",
+  "keywords": [],
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thelderop/middleground.git"
+    "url": "git+https://github.com/zbarovsky/middleground.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thelderop/middleground/issues"
+    "url": "https://github.com/zbarovsky/middleground/issues"
   },
-  "homepage": "https://github.com/thelderop/middleground#readme"
+  "homepage": "https://github.com/zbarovsky/middleground#readme"
 }

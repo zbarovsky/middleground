@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Navbar from '../components/navbar'
 
 function FirstTopic() {
   return (
@@ -96,7 +97,7 @@ function EighthTopic() {
 }
 function NinthTopic() {
   return (
-    <Link href="/climate-science">
+    <Link href="/climateScience">
         <div className={styles.card, styles.climate}>
         <h3>
             Climate science
@@ -131,7 +132,7 @@ function EleventhTopic() {
 export default function TopicOfConversation() {
   return (
     <div className={styles.container}>
-
+      <Navbar />
         <div class="container">
             <div class="row">
                 <div class="col-sm">

@@ -7,6 +7,9 @@ export default function About() {
           Break Bread
         </h3>
         <p>
+          An app that brings people together for a challenging, intentional, growth-fueling conversation.
+        </p>
+        <p>
           Created by Joe, Johnii, Thomas, Caitlin, Enrique, Karina, and Zachary
         </p>
       </div>
