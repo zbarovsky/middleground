@@ -3,6 +3,13 @@ import styles from '../styles/Home.module.css'
 
 export default function Chat() {
 
+
+    // in Home.module.css,
+    // i have the display of the first message set to none
+    // on click, i want to use useEffect
+    // to switch the display to block
+    // currently, i think useEffect runs on page render
+    // so it immediately overwrites my CSS rule
     useEffect(() => {
         document.getElementById("first-message").style.display = "block"
     })
