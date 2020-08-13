@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Ubuntu, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -15,17 +15,6 @@ a {
   box-sizing: border-box;
 }
 
-.title {
-  text-align: center;
-  color: white;
-}
-
-.titleTwo {
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
-
 .leftIndex {
   float: left;
   width: 50%;
@@ -33,19 +22,38 @@ a {
   background-color: #CDA988;
 }
 
+.logo {
+  margin-left: 15vw;
+  margin-top: 20vh;
+  margin-bottom: 2vh;
+}
+
+.title {
+  color: white;
+  margin-left: 16vw;
+  margin-bottom: 1.5vh;
+  font-size: 64px;
+}
+
+.titleTwo {
+  margin-left: 17vw;
+  color: white;
+  font-size: 30px;
+}
+
 .slogan {
   display: flex;
   text-align: center;
-  align-items: center;
+  width: 30%;
   word-wrap: wrap;
   line-height: 41px;
-  padding: 188px 100px 20px 200px;
+  padding: 20vh 2vw 2vh 2vw;
+  margin-left: 60vw;
 }
 
 .logIn {
   width: 300px;
-  float: right;
-  margin-right: 300px;
+  margin-left: 65vw;
 }
 
 .logInBtn {

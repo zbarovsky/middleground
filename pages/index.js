@@ -12,7 +12,7 @@ export default function Home() {
           <div>
             <div className='leftIndex'>
               <aside>
-                  <div>
+                  <div className='logo'>
                     <img src='./logo.png' alt='breaking bread logo: two baguets crossing'/>
                   </div>
                   <div className='title'>
@@ -23,8 +23,8 @@ export default function Home() {
                   </div>
                 </aside>
               </div>
-            <div>
-              <h3 className='slogan'>Have a conversation and see what the other side has to say</h3>
+            <div className='slogan'>
+              <h3>Have a conversation and see what the other side has to say</h3>
             </div>
             <form className="logIn">
               <div className='form-group'> 
