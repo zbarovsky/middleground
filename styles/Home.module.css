@@ -180,8 +180,9 @@
 
 .participants,
 .participants img {
-  height: 5vh;
-  width: 5vw;
+  margin-bottom: 2vh;
+  height: 8vh;
+  width: 4.5vw;
   border-radius: 50%;
   object-fit: cover;
 }
