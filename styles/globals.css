@@ -315,3 +315,68 @@ section .section-title {
   height: 120px;
   border-radius: 50%;
 }
+
+.participantNames {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.participantDescription {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-size: 10px;
+}
+
+#send {
+  text-align: center;
+  width: 8vw;
+  height: 3vw;
+  font-size: 1.5vw;
+  border-radius: 10px;
+  border: none;
+  background: #CDA988;
+}
+
+#chatImage {
+  margin-bottom: 2vh;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: inline;
+  margin-left: 45%;
+}
+
+#chatImageTwo {
+  margin-bottom: 2vh;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2vw;
+}
+
+#chatImageThree {
+  margin-bottom: 2vh;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: inline;
+  margin-right: 95%;
+}
+
+#commentOne {
+  margin-right: 10%;
+  margin-bottom: 0;
+}
+
+#commentTwo {
+  margin-top: 10%;
+}
+
+#chatBox {
+  border-left: 3px solid #CDA988;
+}
+
