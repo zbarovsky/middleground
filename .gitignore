@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-node_modules
->>>>>>> 524e20c05c9afc1342133758110691bc2a2565c7
+*/.next/
 .next
 .env
 .env.build
@@ -11,3 +8,4 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 build
+.next/*
