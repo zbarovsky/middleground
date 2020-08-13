@@ -46,11 +46,3 @@ export default function Chat() {
         </div>
     )
 }
-
-<div class="container">
-<div class="row">
-    <div class="col-sm">
-        <Participants />
-    </div>
-    </div>
-    </div>

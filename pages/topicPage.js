@@ -1,10 +1,29 @@
-import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+import React, { useState, useEffect } from 'react';
 import ArticleCard from './ArticleCard'
+import Navbar from '../components/navbar'
 import Link from 'next/link'
 
 export default function TopicPage() {
-  const [disableButton, setDisableButton] = useState(true)
+  let STARTING_TIME = 60;
+  let remainingTime
+  useEffect(() => {
+    let continueButton = document.getElementById("continue")
+    let timeToRead = setTimeout(endTimer, 3000)
+    remainingTime = STARTING_TIME
+    remainingTime--
+    console.log("TIMER STARTED")
+    if (remainingTime === 0) {
+      continueButton.disabled=false
+      document.getElementById("continue").style.color = 'brown'
+    } else {
+      continueButton.disabled=true
+    }
+  }), []
+
+  function endTimer() {
+    console.log("TIMER FINISHED YOU CAN CONTINUE")
+  }
+  
   let media = [ 
     {
       image: "/cnn.png",
@@ -44,15 +63,16 @@ export default function TopicPage() {
   ]
     
   const cards = media.map((article) => 
-    <ArticleCard media={article} disable={useState}/>
+    <ArticleCard media={article} />
   )
  
   return (
     <>
+    <Navbar />
     <div>
       {cards}
     </div>
-    <Link href="/chat"><button id="continue" disable={disableButton}>Continue</button></Link>
+    <Link href="/chat"><button id="continue">Continue</button></Link>
   </>
   )
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
-
 export default function ArticleCard({media}) {
   
 
@@ -11,12 +10,11 @@ export default function ArticleCard({media}) {
     setShowModal(false);
   } 
  
-  function showMediaAndStartTimer() {
+  function showMedia() {
     setShowModal(true)
-    let timeToRead = setInterval((alertMe), 2000)
-    console.log("timer started")
-    setDisableButton = false
   }
+
+  
 
   function alertMe() {
     console.log("TIMER ENDED!!!!!!!")
@@ -24,14 +22,14 @@ export default function ArticleCard({media}) {
   
   return (
     <>
-      <div id={media.name} className="row modalButton" onClick={showMediaAndStartTimer}>
+      <div id={media.name} className="row modalClick" onClick={showMedia}>
         <img className="mediaImage" src={media.image}></img>
         <h1 className="mediaOutlet">{media.outlet}</h1>
         <h1 className="mediaName">{media.name}</h1>
         <h2 className="mediaSubtitle">{media.subtitle}</h2>
       </div>
       <div className="modalWindow">
-        <Modal show={showModal} className='modalContent'>
+        <Modal size="lg" show={showModal} dialogClassName="modal-90w" className='modalContent'>
             <Modal.Body id="mediaModal">
                 <div class="closeButton">
                     <button class="closeModal" onClick={handleCloseModal} >&times;</button>
