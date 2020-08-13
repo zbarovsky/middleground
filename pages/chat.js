@@ -1,10 +1,11 @@
-function send() {
-    return (
-        document.getElementsByClassName("first-message").hidden = false
-    )
-}
+import React, { useState, useEffect } from 'react'
 
 export default function Chat() {
+
+    useEffect(() => {
+        document.getElementsByClassName("first-message").hidden = false
+    }, [])
+
     return (
         <div>
 
