@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react'
+import styles from '../styles/Home.module.css'
 
 export default function Chat() {
 
-    useEffect(() => {
-        document.getElementsByClassName("first-message").hidden = false
-    }, [])
+    // useEffect(() => {
+    //     document.getElementsByClassName("firstMessage").styles.display = "block"
+    // }, [])
 
     return (
         <div>
 
-            <div className="first-message" hidden>
+            <div className={styles.firstMessage}>
                 <p>I thought this article was interesting!</p>
             </div>
 
-            <div className="second-message" hidden>
+            <div className={styles.secondMessage}>
 
             </div>
 
