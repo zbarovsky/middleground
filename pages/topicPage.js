@@ -9,19 +9,14 @@ export default function TopicPage() {
   useEffect(() => {
     let continueButton = document.getElementById("continue")
     let timeToRead = setTimeout(endTimer, 3000)
-    remainingTime = STARTING_TIME
-    remainingTime--
+    document.getElementById("continue").disabled = true
     console.log("TIMER STARTED")
-    if (remainingTime === 0) {
-      continueButton.disabled=false
-      document.getElementById("continue").style.color = 'brown'
-    } else {
-      continueButton.disabled=true
-    }
   }), []
 
   function endTimer() {
     console.log("TIMER FINISHED YOU CAN CONTINUE")
+    document.getElementById("continue").style.backgroundColor = 'CDA988'
+    document.getElementById("continue").disabled = false
   }
   
   let media = [ 
