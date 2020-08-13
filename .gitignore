@@ -6,4 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 build
+<<<<<<< HEAD
 .next
+=======
+>>>>>>> topicPage

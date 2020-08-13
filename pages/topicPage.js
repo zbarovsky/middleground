@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import ArticleCard from './ArticleCard'
-
+import Link from 'next/link'
 
 export default function TopicPage() {
+  const [disableButton, setDisableButton] = useState(true)
   let media = [ 
     {
       image: "/cnn.png",
@@ -41,25 +42,18 @@ export default function TopicPage() {
       url: "https://thehill.com/homenews/news/511639-6-in-10-oppose-fully-reopening-schools-polltten.com/200/100"
     },
   ]
-
     
   const cards = media.map((article) => 
-    <ArticleCard media={article}/>
+    <ArticleCard media={article} disable={useState}/>
   )
+ 
 
-  // const timerTransition = () => {
-
-  // }
-
-  
-  
-    
   return (
     <>
     <div>
       {cards}
     </div>
-    <button id="continue" onClick={timerTransition}>Continue</button>
+    <Link href="/chat"><button id="continue" disable={disableButton}>Continue</button></Link>
   </>
   )
 }
