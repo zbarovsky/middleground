@@ -14,3 +14,63 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.titleTwo {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.leftIndex {
+  float: left;
+  width: 50%;
+  height: 1200px;
+  background-color: #CDA988;
+}
+
+.slogan {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  word-wrap: wrap;
+  line-height: 41px;
+  padding: 188px 100px 20px 200px;
+}
+
+.logIn {
+  width: 300px;
+  float: right;
+  margin-right: 300px;
+}
+
+.logInBtn {
+  align-items: center;
+  text-align: center;
+  padding: 5px 125px;
+  background: #CDA988;
+  border: 1px solid #BBBBBB;
+  border-radius: 10px;
+  color: white;
+}
+
+.logInBtnTwo {
+  align-items: center;
+  text-align: center;
+  padding: 5px 100px;
+
+  background: #CDA988;
+  border: 1px solid #BBBBBB;
+  border-radius: 10px;
+  color: white;
+}
+
+.input {
+  background: #FFFFFF;
+border: 2px solid #CDA988;
+border-radius: 10px;
+}
