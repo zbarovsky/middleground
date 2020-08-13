@@ -191,6 +191,7 @@
   text-align: center;
   justify-content: start;
   word-wrap: wrap;
+  margin-top: 5vw;
 }
 
 .botResponseTwo {
@@ -214,6 +215,7 @@
   width: 55px;
   border-radius: 50%;
   object-fit: cover;
+  margin-top: 2vh;
 }
 
 .chatbox {
@@ -227,14 +229,3 @@
   }
 }
 
-.participantNames {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.participantDescription {
-  font-family: 'Ubuntu', sans-serif;
-  font-style: normal;
-  font-size: 10px;
-}
