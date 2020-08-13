@@ -1,64 +1,110 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
-export default function Home() {
+function FirstTopic() {
+  return (
+    <div>
+      <h2>
+        <Link href="/climate-science">
+          Climate science
+        </Link>
+      </h2>
+    </div>
+  )
+}
+
+function SecondTopic() {
+  return (
+    <div>
+      <h2>
+        <Link href="/gun-reform">
+          Gun reform
+        </Link>
+      </h2>
+    </div>
+  )
+}
+
+function ThirdTopic() {
+  return (
+    <div>
+      <h2>
+        <Link href="/healthcare">
+          Healthcare
+        </Link>
+      </h2>
+    </div>
+  )
+}
+
+function FourthTopic() {
+  return (
+    <div>
+      <h2>
+        <Link href="/economic-racism">
+          Economic racism
+        </Link>
+      </h2>
+    </div>
+  )
+}
+
+function FifthTopic() {
+  return (
+    <div>
+      <h2>
+        <Link href="/reproductive-rights">
+          Reproductive rights
+        </Link>
+      </h2>
+    </div>
+  )
+}
+
+function SixthTopic() {
+  return (
+    <div>
+      <h2>
+        <Link href="/unions">
+          Unions
+        </Link>
+      </h2>
+    </div>
+  )
+}
+
+export default function TopicOfConversation() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Topics of Conversation
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Choose a topic<br/>Read an article or watch a video<br/>Discuss!
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <FirstTopic />
+        <SecondTopic />
+        <ThirdTopic />
+        <FourthTopic />
+        <FifthTopic />
+        <SixthTopic />
+        
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <div>
+          <h3>
+            MiddleGround
+          </h3>
+          <p>
+            Created by Joe, Johnii, Thomas, Caitlin, Enrique, Karina, and Zachary
+          </p>
+        </div>
       </footer>
     </div>
   )
