@@ -5,7 +5,7 @@ import Link from 'next/link'
 function FirstTopic() {
   return (
     <Link href="/schools-reopening">
-        <div className={styles.card1}>
+        <div className={styles.card, styles.school}>
         <h3>
             Schools reopening
         </h3>
@@ -17,7 +17,7 @@ function FirstTopic() {
 function SecondTopic() {
   return (
     <Link href="/masks">
-        <div className={styles.card2} id="masks">
+        <div className={styles.card, styles.mask}>
         <h3>
             To wear or not to wear
         </h3>
@@ -29,7 +29,7 @@ function SecondTopic() {
 function ThirdTopic() {
   return (
     <Link href="/black-lives-matter">
-        <div className={styles.card3}>
+        <div className={styles.card, styles.blm}>
         <h3>
             BLM
         </h3>
@@ -41,7 +41,7 @@ function ThirdTopic() {
 function FourthTopic() {
   return (
     <Link href="/vaccine">
-        <div className={styles.card4}>
+        <div className={styles.card, styles.vaccine}>
         <h3>
             COVID-19 Vaccine
         </h3>
@@ -53,7 +53,7 @@ function FourthTopic() {
 function FifthTopic() {
   return (
     <Link href="/voting">
-        <div className={styles.card5}>
+        <div className={styles.card, styles.voting}>
         <h3>
             Mail-in voting
         </h3>
@@ -65,7 +65,7 @@ function FifthTopic() {
 function SixthTopic() {
   return (
     <Link href="/reproductive-rights">
-        <div className={styles.card6}>
+        <div className={styles.card, styles.reproductive}>
         <h3>
             Reproductive rights
         </h3>
@@ -76,7 +76,7 @@ function SixthTopic() {
 function SeventhTopic() {
   return (
     <Link href="/healthcare">
-        <div className={styles.card7}>
+        <div className={styles.card, styles.healthcare}>
         <h3>
             Healthcare
         </h3>
@@ -87,7 +87,7 @@ function SeventhTopic() {
 function EighthTopic() {
   return (
     <Link href="/social-disparity">
-        <div className={styles.card8}>
+        <div className={styles.card, styles.social}>
         <h3>
             Social disparity
         </h3>
@@ -98,7 +98,7 @@ function EighthTopic() {
 function NinthTopic() {
   return (
     <Link href="/climate-science">
-        <div className={styles.card9}>
+        <div className={styles.card, styles.climate}>
         <h3>
             Climate science
         </h3>
@@ -109,7 +109,7 @@ function NinthTopic() {
 function TenthTopic() {
   return (
     <Link href="/gun-rights">
-        <div className={styles.card10}>
+        <div className={styles.card, styles.gun}>
         <h3>
             Gun rights
         </h3>
@@ -120,7 +120,7 @@ function TenthTopic() {
 function EleventhTopic() {
   return (
     <Link href="/election">
-        <div className={styles.card11}>
+        <div className={styles.card, styles.election}>
         <h3>
             2020 election
         </h3>
@@ -132,8 +132,6 @@ function EleventhTopic() {
 export default function TopicOfConversation() {
   return (
     <div className={styles.container}>
-
-      <main className={styles.main}>
 
         <div class="container">
             <div class="row">
@@ -156,8 +154,6 @@ export default function TopicOfConversation() {
                 </div>
             </div>
         </div>
-        
-      </main>
     </div>
   )
 }

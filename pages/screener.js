@@ -1,25 +1,24 @@
-export default function Screener() {
+function Screener() {
     return (
-        <form>
-            <label className="sr-only">First name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="First name"></input>
+        <div>
+            <div>
+                onclick function that highlights the div and reveals a column of additional options
+            </div>
+            <div>
+                onclick function that highlights the div and reveals a column of additional options
+            </div>
+            <div>
+                onclick function that highlights the div and reveals a column of additional options
+            </div>
+        </div>
+    )
+}
 
-            <p>Select what applies best for you:</p>
-
-            <input type="radio" id="left" name="political-affiliation"></input>
-            <label for="left">Left</label>
-
-            <input type="radio" id="right" name="political-affiliation"></input>
-            <label for="right">Right</label>
-
-            <input type="radio" id="center" name="political-affiliation"></input>
-            <label for="center">Center</label>
-
-            <input type="radio" id="other" name="political-affiliation"></input>
-            <label for="other">Other</label>
-
-            <input type="submit" id="submit"></input>
-            <label for="submit"></label>
-        </form>
+export default function ScreenerPage() {
+    return (
+        <div>
+            <p>Before continuing, please select the following that apply to you.</p>
+            <Screener />
+        </div>
     )
 }
