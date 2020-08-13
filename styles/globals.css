@@ -125,6 +125,21 @@ a {
   margin-bottom: 5vw;
 }
 
+#letsChat {
+  text-align: center;
+  width: 8vw;
+  height: 3vw;
+  font-size: 1vw;
+  border-radius: 10px;
+  border: none;
+}
+
+#iframe {
+  width: 70%;
+  height: 65%; 
+  margin-left: 15%;
+}
+
 .leftIndex {
   float: left;
   width: 50%;
