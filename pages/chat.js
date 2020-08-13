@@ -5,6 +5,7 @@ import Navbar from '../components/navbar'
 
 export default function Chat() {
 
+
     function showMessage(e) {
         e.preventDefault()
         document.getElementById("first-message").style.display = "block"
@@ -19,6 +20,7 @@ export default function Chat() {
         //document.getElementById(“second-message”).style.display = “block”
         setTimeout(showThirdMessage, 5000)
     }
+
 
     return (
         <div>
@@ -43,6 +45,7 @@ export default function Chat() {
                             
 
                         <form className={styles.chatbox}>
+
                             <textarea placeholder="Hello! I am filler text. Nice to meet you!"></textarea>
                             <img id="chatImageTwo" src="/avatarNew.png" />
                             <button onClick={showMessage} id="send">Send</button>

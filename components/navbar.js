@@ -22,7 +22,7 @@ export default function Navbar () {
                         </Link>
                     </li>
                     <li className='navItem'>
-                        <Link href='/about'>
+                        <Link href='/about-us'>
                             <a>About</a>
                         </Link>
                     </li>
