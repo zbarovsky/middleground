@@ -4,7 +4,7 @@ import Navbar from '../components/navbar'
 
 function FirstTopic() {
   return (
-    <Link href="/schools-reopening">
+    <Link href="/topicPage">
         <div className={styles.card, styles.school}>
         <h3>
             Schools reopening
