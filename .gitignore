@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-node_modules
-=======
 */.next/
->>>>>>> 995794d8212d563901db13bd203986c6090c4d0d
 .next
 .env
 .env.build
