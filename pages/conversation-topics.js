@@ -17,7 +17,7 @@ function FirstTopic() {
 function SecondTopic() {
   return (
     <Link href="/masks">
-        <div className={styles.card2}>
+        <div className={styles.card2} id="masks">
         <h3>
             To wear or not to wear
         </h3>
